@@ -1,39 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SeedScroll</title>
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #0f0f0f;
-      color: #ffffff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
-    .container {
-      max-width: 640px;
-      text-align: center;
-      padding: 24px;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 12px;
-    }
-    p {
-      font-size: 1.1rem;
-      opacity: 0.8;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeedScroll - Grow Before You Scroll</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>SeedScroll</h1>
-    <p>Turn doomscrolling into micro-learning.</p>
-  </div>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <img src="SeedScroll_applogo.png" alt="SeedScroll" class="hero-logo">
+            <h1 class="hero-title">Scroll Smarter with Habit Stacking</h1>
+            <p class="hero-subtitle">
+                SeedScroll transforms our scrolling habits into moments of growth. 
+                Instead of<span> just scrolling</span>, we help you stack learning on top of it—one micro-lesson at a time.
+            </p>
+            
+            <form class="signup-form">
+                <input type="email" placeholder="Enter your email" class="signup-input" required>
+                <button type="submit" class="btn btn-primary btn-signup">Sign Up for Updates & Early Access</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="section">
+            <div class="container">
+                <h2 class="section-title">How It Works: Habit Stacking</h2>
+                <p class="section-intro">
+                    Inspired by the principles in <em>Atomic Habits</em>, SeedScroll uses habit stacking to attach learning 
+                    to the habit you already have. No willpower required—just open your apps and grow.
+                </p>
+                
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3 class="step-title">You Open a Social App</h3>
+                        <p class="step-description">
+                            Your existing scrolling habit triggers everything. No new routine to remember.
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3 class="step-title">SeedScroll Intercepts</h3>
+                        <p class="step-description">
+                            Before you dive into the feed, a quick micro-learning "seed" appears—just a few seconds.
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3 class="step-title">You Absorb a Quick Insight</h3>
+                        <p class="step-description">
+                            A new word, concept, or perspective. Fast, digestible, and immediately useful.
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3 class="step-title">Continue Scrolling, Now Smarter</h3>
+                        <p class="step-description">
+                            You've stacked learning on top of scrolling. The habit compounds, and so does your knowledge.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What You Get Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">What You Get</h2>
+                <p class="section-subtitle">
+                    Three types of micro-learning seeds that rotate throughout your day
+                </p>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <h3 class="card-title">Word of the Day</h3>
+                        <p class="card-description">
+                            Expand your vocabulary one word at a time. Each seed includes definition, usage, and context.
+                        </p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3 class="card-title">Concept Breakdown</h3>
+                        <p class="card-description">
+                            Simple explanations of ideas that matter. Philosophy, science, psychology—made digestible in seconds.
+                        </p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3 class="card-title">Daily Insight</h3>
+                        <p class="card-description">
+                            A mindset shift or perspective that reframes how you think. Small thoughts, big impact.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why It Works Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Why It Works</h2>
+                
+                <div class="why-content">
+                    <p class="why-text">
+                        People will always scroll. That's not a bug—it's a feature. SeedScroll works <em>with</em> your existing 
+                        behavior instead of against it. By intercepting the moment you open an app, we turn a digital reflex 
+                        into an opportunity for micro-improvement.
+                    </p>
+                    
+                    <div class="stats-block">
+                        <h3 class="stats-title">📱 How Often We Open Our Apps (Per Day)</h3>
+                        <div class="stats-list">
+                            <div class="stat-item">
+                                <span class="stat-label">Instagram</span>
+                                <span class="stat-dots">……</span>
+                                <span class="stat-value">10–15 times</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">TikTok</span>
+                                <span class="stat-dots">…………</span>
+                                <span class="stat-value">~20 times</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">All Social Apps</span>
+                                <span class="stat-dots">…</span>
+                                <span class="stat-value">50+ micro-openings</span>
+                            </div>
+                        </div>
+                        <p class="stats-footer">SeedScroll turns these reflexes into tiny learning moments.</p>
+                    </div>
+                    
+                    <p class="why-text">
+                        The science is clear: small wins compound, and habits are easier to build when they're attached to ones 
+                        you already have. As explored in <em>Atomic Habits</em>, the power of habit stacking lies in its simplicity. 
+                        You don't need discipline or guilt—just open your apps and let SeedScroll plant the seeds. Over time, 
+                        these tiny increments of knowledge add up to meaningful growth, all without changing your routine.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="section section-cta">
+            <div class="container">
+                <h2 class="cta-title">Grow Before You Scroll</h2>
+                <p class="cta-subtitle">
+                    Start stacking learning on top of your scrolling habit today. Effortless self-improvement, one seed at a time.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2026 SeedScroll. Transform scrolling into growth.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
