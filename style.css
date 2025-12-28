@@ -1,0 +1,492 @@
+/* ============================================
+   Reset & Base Styles
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* ============================================
+   Container & Layout Utilities
+   ============================================ */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.section {
+    padding: 80px 0;
+    border-top: 1px solid #333333;
+}
+
+.section:first-of-type {
+    border-top: none;
+}
+
+.section-alt {
+    background-color: #0a0a0a;
+}
+
+.section-cta {
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* ============================================
+   Typography
+   ============================================ */
+
+.hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.hero-subtitle {
+    font-size: clamp(1.125rem, 2vw, 1.25rem);
+    color: #cccccc;
+    max-width: 700px;
+    margin: 0 auto 0;
+    text-align: center;
+}
+
+.hero-subtitle span {
+    font-style: italic;
+}
+
+.section-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.section-subtitle {
+    font-size: 1.125rem;
+    color: #aaaaaa;
+    text-align: center;
+    margin-bottom: 48px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-intro {
+    font-size: 1.125rem;
+    color: #cccccc;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 64px;
+    line-height: 1.7;
+}
+
+.cta-title {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.cta-subtitle {
+    font-size: 1.25rem;
+    color: #cccccc;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+/* ============================================
+   Buttons
+   ============================================ */
+
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.btn-primary:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.btn-large {
+    padding: 18px 40px;
+    font-size: 1.125rem;
+}
+
+/* ============================================
+   Hero Section
+   ============================================ */
+
+.hero {
+    padding: 30px 0 50px;
+    text-align: center;
+    border-bottom: 1px solid #333333;
+}
+
+.hero-logo {
+    width: 280px;
+    height: auto;
+    margin: 0 auto 30px;
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ============================================
+   Sign-Up Form
+   ============================================ */
+
+.signup-form {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 40px auto 0;
+    flex-wrap: wrap;
+}
+
+.signup-input {
+    flex: 1;
+    min-width: 250px;
+    padding: 14px 20px;
+    font-size: 1rem;
+    background-color: #0a0a0a;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: inherit;
+    transition: border-color 0.2s ease;
+}
+
+.signup-input:focus {
+    outline: none;
+    border-color: #666666;
+}
+
+.signup-input::placeholder {
+    color: #666666;
+}
+
+.btn-signup {
+    padding: 14px 32px;
+    white-space: nowrap;
+    border-radius: 8px;
+}
+
+/* ============================================
+   Steps (How It Works)
+   ============================================ */
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 48px;
+}
+
+.step {
+    text-align: center;
+}
+
+.step-number {
+    width: 48px;
+    height: 48px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto 20px;
+    border: 1px solid #333333;
+}
+
+.step-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.step-description {
+    color: #aaaaaa;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* ============================================
+   Cards (What You Get)
+   ============================================ */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    margin-top: 48px;
+}
+
+.card {
+    background-color: #0a0a0a;
+    border: 1px solid #1a1a1a;
+    border-radius: 8px;
+    padding: 32px;
+    transition: border-color 0.2s ease;
+}
+
+.card:hover {
+    border-color: #333333;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.card-description {
+    color: #aaaaaa;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* ============================================
+   Why It Works Section
+   ============================================ */
+
+.why-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.why-text {
+    font-size: 1.125rem;
+    color: #cccccc;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.why-text:last-child {
+    margin-bottom: 0;
+}
+
+.why-text em {
+    font-style: italic;
+    color: #ffffff;
+}
+
+/* ============================================
+   Stats Block
+   ============================================ */
+
+.stats-block {
+    background-color: #0a0a0a;
+    border: 1px solid #1a1a1a;
+    border-radius: 8px;
+    padding: 32px;
+    margin: 32px 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stats-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.stats-list {
+    margin-bottom: 20px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    font-size: 1rem;
+}
+
+.stat-item:last-child {
+    margin-bottom: 0;
+}
+
+.stat-label {
+    color: #ffffff;
+    font-weight: 500;
+    min-width: 140px;
+}
+
+.stat-dots {
+    color: #666666;
+    flex: 1;
+    text-align: center;
+    font-family: monospace;
+}
+
+.stat-value {
+    color: #aaaaaa;
+    min-width: 140px;
+    text-align: right;
+}
+
+.stats-footer {
+    color: #cccccc;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+
+.footer {
+    padding: 40px 0;
+    border-top: 1px solid #333333;
+    text-align: center;
+}
+
+.footer-text {
+    color: #666666;
+    font-size: 0.875rem;
+}
+
+/* ============================================
+   Responsive Adjustments
+   ============================================ */
+
+@media (max-width: 768px) {
+    .section {
+        padding: 60px 0;
+    }
+    
+    .section-cta {
+        padding: 80px 0;
+    }
+    
+    .hero {
+        padding: 20px 0 40px;
+    }
+    
+    .hero-logo {
+        width: 200px;
+        margin-bottom: 24px;
+    }
+    
+    .steps {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .card-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .stats-block {
+        padding: 24px;
+        margin: 24px 0;
+    }
+    
+    .stat-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .stat-label,
+    .stat-value {
+        min-width: auto;
+    }
+    
+    .stat-dots {
+        display: none;
+    }
+    
+    .stat-value {
+        text-align: left;
+    }
+    
+    .signup-form {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+    
+    .signup-input {
+        min-width: 100%;
+        width: 100%;
+    }
+    
+    .btn-signup {
+        width: 100%;
+        white-space: normal;
+    }
+}
+
