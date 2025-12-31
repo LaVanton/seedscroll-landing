@@ -489,10 +489,13 @@ body {
         white-space: normal;
     }
    .concept-image {
-  width: 100%;
-  max-width: 960px;
-  margin: 64px auto;
-  display: block;
-  border-radius: 24px;
-}
+        width: 100%;
+        max-width: 960px;
+        max-height: 520px;   /* 👈 KEY LINE */
+        object-fit: contain; /* 👈 keeps proportions */
+        margin: 64px auto;
+        display: block;
+        border-radius: 24px;
+   }
+
 
